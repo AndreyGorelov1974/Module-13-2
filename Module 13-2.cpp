@@ -32,6 +32,7 @@ int main()
 
 	for (int i = 0; i < items.size(); ++i)
 	{
+		//проверяем что индекс цены товара не выходит за границы вектора цен
 		if (items[i] < prices.size()) {
 			purchaseAmount += prices[items[i]];
 		}
